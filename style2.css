@@ -1,0 +1,79 @@
+#map-container {
+
+    position: relative;
+
+}
+
+#singapore-map {
+
+    height: 80vh;
+    
+}
+
+#search-bar {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 400;
+    background-color: rgba(255,255,255,0.5);
+    min-width: 300px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-btn {
+
+    border: 1px solid black;
+}
+
+#search-results {
+
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    overflow-y: scroll;    
+    height: 55vh;
+    width: 295px;
+    background-color: white;
+    padding-top: 5px;
+    padding-left: 5px;
+    display: none;
+    
+}
+
+.search-result{
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+@media (max-width: 376px){
+
+    #search-results {
+
+        position: absolute;
+        top: 300px;
+        left: -20px;
+        max-height: 130px;
+        max-width: 250px;
+        z-index: 401;
+    }
+
+    #singapore-map {
+
+        width: 100vw;
+        height: 85vh;        
+    }
+    
+}
+
+p {
+
+    border:0;
+    padding-bottom:10px;
+    margin:0;
+}
